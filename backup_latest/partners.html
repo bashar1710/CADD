@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners - CADDARABIA Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        @keyframes neonGlow {
+            0% { filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #f9f9f9) drop-shadow(0 0 15px #fafafa); }
+            25% { filter: drop-shadow(0 0 5px #517e81) drop-shadow(0 0 10px #517e81) drop-shadow(0 0 15px #517e81); }
+        }
+
+        .partners {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .partner-logos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Set to 3 columns for matrix view */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .partner-logos a {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .partner-logos img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+            animation: neonGlow 1.5s infinite alternate; /* Apply neon glow effect */
+        }
+
+        .partner-logos img:hover {
+            transform: scale(1.1); /* Scale up on hover */
+        }
+
+        .nav-links {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: space-around; /* Space out the items evenly */
+        }
+
+        .nav-links li {
+            margin: 0 15px; /* Add some spacing between items */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+<nav class="navbar" style="display: flex; justify-content: flex-start; align-items: center;">
+        <div class="logo" style="flex: 0;">
+            <img src="images/logo.png" alt="CADDARABIA Logo" class="logo-img" style="animation: neonGlow 1.5s infinite alternate;">
+        </div>
+    <ul class="nav-links" style="margin-left: auto;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="partners.html" class="active">Partners</a></li>
+        </ul>
+    </nav>
+
+    <section class="partners">
+        <h2>Our Partners</h2>
+        <div class="partner-logos">
+            <a href="https://saltosystems.com/en/"><img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/logos/logo1-removebg-preview.png" alt="Partner 1"></a>
+            <a href="https://apsysnetworks.com/"><img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/logos/logo3-removebg-preview.png" alt="Partner 2"></a>
+            <a href="https://www.mviptv.com/"><img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/logos/logo4-removebg-preview.png" alt="Partner 3"></a>
+            <a href="https://www.peoplelinkvc.com/"><img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/logos/logo5-removebg-preview.png" alt="Partner 4"></a>
+            <a href="https://www.bdcom.cn/"><img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/logos/logo6-removebg-preview.png" alt="Partner 5"></a>
+            <a href="https://www.supermicro.com/en/"><img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/logos/logo7-removebg-preview.png" alt="Supermicro"></a> <!-- New Partner -->
+        </div>
+    </section>
+
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <h3>Send Us a Message</h3>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p>&copy; 2024 CADDARABIA. All rights reserved.</p>
+</footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

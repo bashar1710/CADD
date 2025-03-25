@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - CADDARABIA Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+<style>
+    .service-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px; /* Space between cards */
+    }
+
+    .card {
+        border: 1px solid #ccc; /* Optional: Add a border */
+        border-radius: 8px; /* Optional: Rounded corners */
+        padding: 16px; /* Optional: Padding inside cards */
+        text-align: center; /* Center text */
+        cursor: pointer; /* Change cursor to pointer */
+        transition: transform 0.2s; /* Smooth transition for hover effect */
+        height: 300px; /* Set a fixed height for all cards */
+        overflow: hidden; /* Hide overflow to maintain uniformity */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Slightly enlarge the card on hover */
+    }
+
+    .card h3, .card p {
+        color: white; /* Change text color to white */
+    }
+
+    .card img {
+        height: 150px; /* Set a fixed height for images */
+        object-fit: cover; /* Ensure images cover the area without distortion */
+        border-radius: 50%; /* Make the images round */
+    }
+
+    @keyframes neonGlow {
+        0% { filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #f9f9f9) drop-shadow(0 0 15px #fafafa); }
+        25% { filter: drop-shadow(0 0 5px #517e81) drop-shadow(0 0 10px #517e81) drop-shadow(0 0 15px #517e81); }
+    }
+
+    .image-slideshow {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+        animation: neonGlow 4s infinite alternate; /* Apply the animation with a slower duration */
+    }
+
+    .nav-links {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: space-around; /* Space out the items evenly */
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Add some spacing between items */
+    }
+</style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+<nav class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+
+
+        <div class="logo">
+            <img src="images/logo.png" alt="CADDARABIA Logo" class="logo-image">
+        </div>
+    <ul class="nav-links" style="margin-left: auto;">
+
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="partners.html">Partners</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+<h2 class="centered-text">Our Services</h2>
+
+        <div class="service-cards">
+            <a href="#" class="card">
+                <img src="C:/Users/bashs/Downloads/Audio visuals.jpg" alt="Service 1" class="service-image">
+                <h3>Audio & Visuals</h3>
+                <p>Audiovisual solutions offer a world of immersive experiences and seamless communication.</p>
+            </a>
+            <a href="#" class="card">
+                <img src="C:/Users/bashs/Downloads/security system.jpg" alt="Service 2" class="service-image">
+                <h3>Security Systems</h3>
+                <p>Advanced CCTV and monitoring solutions.</p>
+            </a>
+            <a href="#" class="card">
+                <img src="C:/Users/bashs/Downloads/networking and infrastructure.jpg" alt="Service 3" class="service-image">
+                <h3>Networking and Infrastructure</h3>
+                <p>Reliable and scalable networking infrastructure to support digital transformation.</p>
+            </a>
+            <a href="#" class="card">
+                <img src="C:/Users/bashs/Downloads/server storage.jpg" alt="Service 4" class="service-image">
+                <h3>Server Storage</h3>
+                <p>Ensures secure and efficient data storage.</p>
+            </a>
+            <a href="#" class="card">
+                <img src="C:/Users/bashs/Downloads/fleet management.jpg" alt="Service 5" class="service-image">
+                <h3>Fleet management & Student tracking</h3>
+                <p>Real-time tracking and monitoring.</p>
+            </a>
+            <a href="#" class="card">
+                <img src="C:/Users/bashs/Downloads/Software.jpg" alt="Service 6" class="service-image">
+                <h3>Software</h3>
+                <p>Custom Software Solutions.</p>
+            </a>
+            <a href="#" class="card">
+                <img src="C:/Users/bashs/Downloads/Cyber.jpg" alt="Service 7" class="service-image">
+                <h3>Cyber Security</h3>
+                <p>Ensures compliance with global security standards and safeguards sensitive information.</p>
+            </a>    
+        </div>
+        <div class="cta-buttons">
+            <a href="contact.html" class="cta-primary">Contact Us for More Info</a>
+            <a href="features.html" class="cta-secondary">Explore Our Features</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <h3>Send Us a Message</h3>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p>&copy; 2024 CADDARABIA. All rights reserved.</p>
+</footer>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

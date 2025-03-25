@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - CADDARABIA Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <style>
+    @keyframes neonGlow {
+        0% { filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #f9f9f9) drop-shadow(0 0 15px #fafafa); }
+        25% { filter: drop-shadow(0 0 5px #517e81) drop-shadow(0 0 10px #517e81) drop-shadow(0 0 15px #517e81); }
+    }
+
+    .image-slideshow {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+        animation: neonGlow 4s infinite alternate; /* Apply the animation with a slower duration */
+    }
+
+    .nav-links {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: space-around; /* Space out the items evenly */
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Add some spacing between items */
+    }
+</style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+<nav class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="CADDARABIA Logo" style="filter: drop-shadow(0 0 5px #b6a1a1) drop-shadow(0 0 10px #a8bba8) drop-shadow(0 0 15px #aecfae);">
+        </div>
+<ul class="nav-links" style="margin-left: auto;">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="partners.html">Partners</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="images/service1.jpg" alt="Service 1" class="service-image">
+                <h3>Audio & Visuals</h3>
+                <p>Audiovisual solutions offer a world of immersive experiences and seamless communication.</p>
+                <a href="#" class="service-link">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/service2.jpg" alt="Service 2" class="service-image">
+                <h3>Surveillance Systems</h3>
+                <p>Advanced CCTV and monitoring solutions.</p>
+                <a href="#" class="service-link">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="images/service3.jpg" alt="Service 3" class="service-image">
+                <h3>Access Control</h3>
+                <p>Secure access management systems.</p>
+                <a href="#" class="service-link">Learn More</a>
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="contact.html" class="cta-primary">Contact Us for More Info</a>
+            <a href="features.html" class="cta-secondary">Explore Our Features</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <p>&copy; 2024 CADDARABIA. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

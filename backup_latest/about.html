@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CADDARABIA Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <style>
+    @keyframes neonGlow {
+        0% { filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #f9f9f9) drop-shadow(0 0 15px #fafafa); }
+        25% { filter: drop-shadow(0 0 5px #517e81) drop-shadow(0 0 10px #517e81) drop-shadow(0 0 15px #517e81); }
+    }
+
+    .image-slideshow {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo img {
+        width: 100%; /* Adjust as needed */
+        height: auto; /* Maintain aspect ratio */
+        animation: neonGlow 4s infinite alternate; /* Apply the animation with a slower duration */
+    }
+
+    .nav-links {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: space-around; /* Space out the items evenly */
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Add some spacing between items */
+    }
+
+    .about-content {
+        padding: 40px; /* Increased padding for better spacing */
+        margin: 20px 0;
+        border-radius: 15px; /* Added rounded corners */
+        background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    }
+
+    .vision-mission-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        padding: 20px; /* Added padding for better layout */
+        border-radius: 15px; /* Added rounded corners */
+        background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    }
+
+    .vision, .mission {
+        margin: 0 10px; /* Added margin for separation */
+        border-radius: 15px; /* Added rounded corners */
+        background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+        padding: 15px; /* Added padding for better spacing */
+    }
+
+    .solutions-services, .partners, .industries {
+        margin: 20px 0;
+        border-radius: 15px; /* Added rounded corners */
+        background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+        padding: 20px; /* Added padding for better spacing */
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: var(--primary-color);
+        color: var(--text-color);
+    }
+    </style>
+
+<!-- Header -->
+<header class="header">
+    <nav class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo">
+            <img src="images/logo.png" alt="CADDARABIA Logo" style="filter: drop-shadow(0 0 5px #b6a1a1) drop-shadow(0 0 10px #a8bba8) drop-shadow(0 0 15px #aecfae);">
+        </div>
+        <ul class="nav-links" style="margin-left: auto;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="partners.html">Partners</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="about-header" style="text-align: center;"> <!-- Centering the header -->
+        <h2 class="about-header-title">About Us</h2>
+        <p class="tagline">Connecting Tech, Delivering Excellence</p>
+    </div>
+
+    <div class="about-content">
+        <article class="company-overview">
+            <h3 class="section-title" style="text-align: center;">Who We Are</h3>
+            <p>CADD Arabia is a leading technology distribution company dedicated to providing innovative IT products and solutions. Our expertise and strong industry partnerships enable businesses to thrive in the digital era.</p>
+            <img src="C:/Users/bashs/Downloads/DALL·E 2025-03-21 21.53.07 - A simple illustration of a modern office workspace with basic technology. The scene includes a few desks with computers, a smartboard, and employees w.webp" alt="Modern Office Workspace">
+        </article>
+
+        <div class="vision-mission-container">
+            <article class="vision">
+                <h3 class="vision-title" style="text-align: center;">Our Vision</h3>
+                <p>To be a pioneer in digital transformation, delivering state-of-the-art technology solutions that drive business success.</p>
+                <img src="C:/Users/bashs/Downloads/DALL·E 2025-03-21 21.53.09 - A simple illustration of a futuristic city skyline with minimal digital technology overlays. The city has a few tall buildings, some holographic signs.webp" alt="Futuristic City Skyline">
+            </article>
+
+            <article class="mission">
+                <h3 class="mission-title" style="text-align: center;">Our Mission</h3>
+                <p>To simplify IT procurement with expert consultation and cutting-edge solutions, empowering businesses to stay ahead of technology trends.</p>
+                <img src="C:/Users/bashs/Downloads/DALL·E 2025-03-21 21.53.13 - A simple illustration of a tech professional working on a secure network or a futuristic digital interface. The individual is at a basic workstation w.webp" alt="Tech Professional">
+            </article>
+        </div>
+
+        <section class="solutions-services">
+            <h3 class="section-title" style="text-align: center;">Our Solutions & Services</h3>
+            <p>At CADD Arabia, we provide comprehensive IT solutions that cater to various business needs.</p>
+            <ul class="horizontal-list">
+                <li>Technology Distribution & Procurement</li>
+                <li>Customized IT Solutions</li>
+                <li>Enterprise IT Solutions</li>
+                <li>Smart Business & Connectivity Solutions</li>
+                <li>IT Infrastructure & Security Solutions</li>
+            </ul>
+            <img src="C:/Users/bashs/Downloads/DALL·E 2025-03-21 21.53.16 - A simple illustration of a warehouse with high-tech equipment ready for shipment. The scene includes shelves with neatly stacked boxes, a few robotic .webp" alt="Warehouse with High-Tech Equipment">
+        </section>
+
+        <section class="partners">
+            <h3 class="section-title" style="text-align: center;">Our Global Technology Partners</h3>
+            <p>We collaborate with world-renowned technology leaders to offer premium Technology solutions.</p>
+            <ul class="horizontal-list">
+                <li>salto systems</li>
+                <li>Apsys networks</li>
+                <li>Mviptv</li>
+                <li>Peoplelinkvc</li>
+                <li>BDcom</li>
+                <li>Supermicro</li> 
+            </ul>
+            <img src="C:/Users/bashs/Downloads/DALL·E 2025-03-21 21.53.29 - A simple illustration of a handshake between business professionals with a backdrop of global technology brands. The scene includes two people shaking.webp" alt="Handshake Illustration">
+        </section>
+
+        <section class="industries">
+            <h3 class="section-title" style="text-align: center;">Industries We Serve</h3>
+            <p>Our solutions cater to a wide range of industries:</p>
+            <ul class="horizontal-list">
+                <li>🏢 Enterprise & Corporate</li>
+                <li>🏨 Hospitality & Real Estate</li>
+                <li>🏥 Healthcare & Medical</li>
+                <li>🏫 Education & E-Learning</li>
+                <li>📡 Telecom & Networking</li>
+            </ul>
+            <img src="C:/Users/bashs/Downloads/DALL·E 2025-03-21 21.53.19 - A simple illustration of a team collaborating on a digital whiteboard with IT strategy planning. The scene includes a few people standing around a lar.webp" alt="Team Collaboration">
+        </section>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <h3>Send Us a Message</h3>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p>&copy; 2024 CADDARABIA. All rights reserved.</p>
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>

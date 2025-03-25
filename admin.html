@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - CADDARABIA Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="CADDARABIA Logo" class="logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="partners.html">Partners</a></li>
+        </ul>
+    </nav>
+
+    <!-- Admin Dashboard Section -->
+    <section id="admin" class="admin">
+        <h2 class="admin-dashboard-title">Admin Dashboard</h2>
+        <p>Manage your website content below:</p>
+        
+        <h3>Edit Home Page</h3>
+        <textarea placeholder="Edit content for the home page..."></textarea>
+        <button class="cta-primary">Save Changes</button>
+
+        <h3>Edit Services Page</h3>
+        <button class="cta-primary">Save Changes</button>
+
+        <h3>Edit About Page</h3>
+        <textarea class="edit-textarea" placeholder="Edit content for the about page..."></textarea>
+        <button class="cta-primary">Save Changes</button>
+
+        <h3>Edit Contact Page</h3>
+        <textarea class="edit-contact-textarea" placeholder="Edit content for the contact page..."></textarea>
+        <button class="cta-primary">Save Changes</button>
+
+        <h3>Edit Partners Page</h3>
+        <textarea class="edit-partners-textarea" placeholder="Edit content for the partners page..."></textarea>
+        <button class="cta-primary">Save Changes</button>
+
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <h3>Send Us a Message</h3>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p>&copy; 2024 CADDARABIA. All rights reserved.</p>
+</footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

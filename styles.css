@@ -1,0 +1,148 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Adding Roboto for body text */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap'); /* Adding Montserrat for headings */
+
+:root {
+  --primary-color: #090909; /* Dark steel gray */
+  --secondary-color: #312e2e; /* Gunmetal */
+  --accent-color: #FF95000; /* Neon orange */
+  --glow-color: #0FF0FC; /* Cyber aqua glow */
+  --text-color: #f6b6b6; /* Light gray */
+  --background-color: #141414; /* Deep dark */
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif; /* Using Roboto for body text */
+  text-transform: uppercase;
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif; /* Using Montserrat for headings */
+  font-weight: 700; /* Bold weight for headings */
+  font-size: 1.5em; /* Adjusted font size for h3 */
+}
+
+p {
+  font-family: 'Roboto', sans-serif; /* Using Roboto for paragraph text */
+  line-height: 1.8; /* Increased line height for better readability */
+}
+
+.navbar {
+  background: var(--primary-color);
+  padding: 40px; /* Increased padding for a larger navbar */
+  text-align: center;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+  text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color); /* Add glowing effect */
+}
+
+.navbar a:hover {
+  color: var(--glow-color);
+  text-shadow: 0 0 5px var(--glow-color);
+}
+
+.card {
+  background: var(--secondary-color);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--glow-color);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+button {
+  background: red; /* Updated background color */
+  color: white; /* Updated text color */
+  padding: 15px 30px; /* Updated padding */
+  border: none;
+  cursor: pointer;
+  font-size: 16px; /* Updated font size */
+  text-transform: uppercase;
+  transition: all 0.2s ease; /* Updated transition */
+  box-shadow: 0 5px 0 black; /* Updated box shadow */
+}
+
+button:hover {
+  transform: translateY(-5px); /* Updated hover effect */
+  box-shadow: 0 10px 0 black; /* Updated hover shadow */
+}
+
+
+button:hover {
+  background: var(--glow-color);
+  color: var(--primary-color);
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+/* Logo Styling */
+.logo img {
+  max-width: 250px !important; /* Force reduced max-width for the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* New Image Styling */
+img {
+  width: auto; /* Allow images to maintain their original width */
+  height: auto; /* Allow images to maintain their original height */
+  object-fit: contain; /* Ensure the image fits within its container */
+}
+
+/* Footer Styles */
+footer {
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social-links {
+  margin-bottom: 10px;
+}
+
+footer .social-links a {
+  color: var(--text-color);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .form-group {
+  margin: 10px 0;
+}
+
+footer input, footer textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+footer .submit-btn {
+  background: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer .submit-btn:hover {
+  background: var(--glow-color);
+  color: var(--primary-color);
+}

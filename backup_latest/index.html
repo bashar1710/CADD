@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CADDARABIA Security</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @keyframes neonGlow {
+            0% { filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #f9f9f9) drop-shadow(0 0 15px #fafafa); }
+            25% { filter: drop-shadow(0 0 5px #517e81) drop-shadow(0 0 10px #517e81) drop-shadow(0 0 15px #517e81); }
+        }
+
+        .image-slideshow {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .logo img {
+            width: 100%; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+            animation: neonGlow 4s infinite alternate; /* Apply the animation with a slower duration */
+        }
+
+        .nav-links {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+            display: flex; /* Use flexbox for horizontal layout */
+            justify-content: space-around; /* Space out the items evenly */
+        }
+
+        .nav-links li {
+            margin: 0 15px; /* Add some spacing between items */
+        }
+    </style>
+</head>
+<body class="color-change-2x">
+
+    <!-- Header -->
+    <header class="header">
+<nav class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="CADDARABIA Logo" style="filter: drop-shadow(0 0 5px #b6a1a1) drop-shadow(0 0 10px #a8bba8) drop-shadow(0 0 15px #aecfae);">
+            </div>
+    <ul class="nav-links" style="margin-left: auto;">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="partners.html">Partners</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Image Slideshow Section -->
+    <section class="image-slideshow">
+        <h2 style="text-align: center;"></h2>
+        <div class="slideshow-container">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/img/img 4.png" alt="Image 4">
+            </div>
+            <div class="mySlides fade">
+                <img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/img/img 5.png" alt="Image 5" style="width: 100%; height: auto;">
+            </div>
+            <div class="mySlides fade">
+                <img src="C:/Users/bashs/Downloads/OneDrive/Desktop/CADD/img/img 6.png" alt="Image 6" style="width: 100%; height: auto;">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+    <h3>Send Us a Message</h3>
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    <p>&copy; 2024 CADDARABIA. All rights reserved.</p>
+</footer>
+
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

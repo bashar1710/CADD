@@ -1,0 +1,86 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+:root {
+  --primary-color: #2E2E2E; /* Dark steel gray */
+  --secondary-color: #4A4A4A; /* Gunmetal */
+  --accent-color: #FF9500; /* Neon orange */
+  --glow-color: #0FF0FC; /* Cyber aqua glow */
+  --text-color: #F5F5F5; /* Light gray */
+  --background-color: #1A1A1A; /* Deep dark */
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background: var(--primary-color);
+  padding: 40px; /* Increased padding for a larger navbar */
+  text-align: center;
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+  text-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color); /* Add glowing effect */
+}
+
+
+.navbar a:hover {
+  color: var(--glow-color);
+  text-shadow: 0 0 5px var(--glow-color);
+}
+
+.card {
+  background: var(--secondary-color);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--glow-color);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px var(--glow-color);
+}
+
+button {
+  background: var(--accent-color);
+  color: var(--text-color);
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--glow-color);
+  color: var(--primary-color);
+  box-shadow: 0 0 10px var(--glow-color);
+}
+
+/* Logo Styling */
+.logo img {
+  max-width: 250px !important; /* Force reduced max-width for the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* New Image Styling */
+img {
+  width: auto; /* Allow images to maintain their original width */
+  height: auto; /* Allow images to maintain their original height */
+  object-fit: contain; /* Ensure the image fits within its container */
+}
